@@ -7,15 +7,21 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #c6c0c0;
+    background-color: #000000;
 }
 nav{
     background-color: #000000;
     margin: auto;
     color: #fff;
-    max-width: 800px;
+   
+
     height: 3rem;
     text-align: center;
+}
+section{
+    padding:0px 5px;
+    background-color: #fff;
+    
 }
 
 .slideshow-container {
@@ -25,7 +31,9 @@ nav{
     padding: 0px;
     margin: auto;
 }
-
+.slider{
+    position: relative;
+}
 .slide {
     display: none;
 }
@@ -38,7 +46,17 @@ img {
 
 .navigation {
     text-align: center;
-    padding: 20px;
+    
+    
+    top: 50%;
+    z-index: 1;
+    left: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1;
+    
+    
 }
 
 .prev, .next {
@@ -64,11 +82,13 @@ img {
 .thumbnail {
     margin: 10px;
     cursor: pointer;
+    background-color: #ccc;
 }
 
 .thumbnail img {
     width: 150px;
-    height: 100px;
+    height: 150px;
+    
     object-fit: cover;
 }
 
@@ -87,8 +107,10 @@ img {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 90%;
+    max-width: 70%;
     max-height: 80%;
+    padding: 5px;
+    background-color: #fff;
 }
 
 .close {
@@ -96,14 +118,16 @@ img {
     top: 15px;
     right: 35px;
     font-size: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
 .close:hover {
     color: #ccc;
 }
-
+.gallery-title{
+    text-align: center;
+}
 
 
 
